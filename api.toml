@@ -1,0 +1,4 @@
+route = "helloworld"
+encodings = ["texthtml"]
+arguments = []
+cacheable = true
