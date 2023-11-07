@@ -8,19 +8,12 @@ edition = "2021"
 
 [dependencies]
 rhizo-sdk = "0.1.4"
-# Uncomment this is you are having trouble building
-# reqwest = { git = "https://github.com/wasix-org/reqwest.git", default-features = false, features = [
-#    "json",
-#    "blocking",
-#] }
-
-[patch.crates-io] # 👈🏼 Added section here
-# Remove reqwest from patch and uncomment the reqwest dependency if you have 
-# trouble building outside of the box
 reqwest = { git = "https://github.com/wasix-org/reqwest.git", default-features = false, features = [
     "json",
     "blocking",
 ] }
+
+[patch.crates-io]
 socket2 = { git = "https://github.com/wasix-org/socket2.git", branch = "v0.4.9" }  # 👈🏼 Added line here
 libc = { git = "https://github.com/wasix-org/libc.git" }  # 👈🏼 Added line here
 tokio = { git = "https://github.com/wasix-org/tokio.git", branch = "epoll" }  # 👈🏼 Added line here
