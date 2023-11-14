@@ -1,11 +1,10 @@
-use rhizosdk::fn_main;
-use rhizosdk::container::*;
+use rhizosdk::{async_runtime, fn_main, read_argument_bytes, read_oncb, write_return};
 
-fn_main!(|buffer: Vec<u8>|{
+fn_main!(|_|{
     b"Hello, world!".to_vec()
 });
 
 #[no_mangle]
 pub fn test() {
-    assert_eq(true, true);
+    rhizosdk::test::assert_eq(true, true);
 }
