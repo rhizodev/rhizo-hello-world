@@ -8,7 +8,7 @@ license = "MIT"
 lto = "fat"
 
 [dependencies]
-rhizo-sdk = {path="../rhizo-sdk"}
+rhizo-sdk = "0.2.0"
 reqwest = { git = "https://github.com/wasix-org/reqwest.git", default-features = false}
 tokio = {git = "https://github.com/wasix-org/tokio.git", branch = "epoll", features=["rt-multi-thread"] }
 rhizo-types = "0.1.9"
