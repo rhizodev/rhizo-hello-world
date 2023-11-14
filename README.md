@@ -22,4 +22,4 @@ Deploy:</br>
 `rhizo-cli deploy target/wasm32-wasmer-wasi/release/helloworld-rhizo.wasm api.toml`
 </br></br>
 See the official documentation for installation instructions and documentation on rhizo-cli:</br>
-
+https://rhizodev.github.io/rhizo-docs/documentation.html
