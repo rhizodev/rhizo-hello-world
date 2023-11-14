@@ -1,7 +1,7 @@
-use rhizosdk::{async_runtime, fn_main, read_argument_bytes, read_oncb, write_return};
+use rhizosdk::{fn_main, read_argument_bytes, write_return};
 
 fn_main!(|_|{
-    b"Hello, world!".to_vec()
+    b"Hello, World!".to_vec()
 });
 
 #[no_mangle]
